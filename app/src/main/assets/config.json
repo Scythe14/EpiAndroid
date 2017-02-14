@@ -1,0 +1,14 @@
+{
+  "endpoint": "https://epitech-api.herokuapp.com",
+  "location": ["BDX","LIL","LYN","MAR","MPL","NCY","NAN","NCE","PAR","REN","STG","TLS"],
+  "section": {
+    "modules": "Modules",
+    "projects": "Projects",
+    "activities": "Activities",
+    "internship": "Intership",
+    "marks": "Marks"
+  },
+
+  "timeformat": "d/M/y",
+  "course": ["classic", "tek1ed", "tek2ed"]
+}

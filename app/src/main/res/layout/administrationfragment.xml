@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ScrollView01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none" >
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/administration_view"
+                        android:clickable="true">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/administration"
+                    android:id="@+id/administration"
+                    android:layout_marginTop="31dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/background_one"
+                    android:minHeight="30dp"
+                    android:background="#E9E9E9"
+                    android:layout_alignBottom="@+id/marks"
+                    android:layout_alignRight="@+id/marks"
+                    android:layout_alignEnd="@+id/marks"
+                    android:layout_alignLeft="@+id/welcome"
+                    android:layout_alignStart="@+id/welcome"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="-10dp"
+                    android:layout_below="@+id/welcome"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="true"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/welcome"
+                    android:id="@+id/welcome"
+                    android:layout_below="@+id/administration"
+                    android:layout_alignLeft="@+id/administration"
+                    android:layout_alignStart="@+id/administration"
+                    android:layout_marginTop="15dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pedagogy"
+                    android:id="@+id/pedagogy"
+                    android:layout_below="@+id/welcome"
+                    android:layout_alignLeft="@+id/welcome"
+                    android:layout_alignStart="@+id/welcome"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"/>
+
+            <epiandroid.app.adapters.TextViewCustom
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/marks"
+                    android:id="@+id/marks"
+                    android:layout_toEndOf="@+id/imageView"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_alignTop="@+id/imageView"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginLeft="5dp"
+                    ref="https://intra.epitech.eu/pedago/rating/"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView"
+                    android:background="@drawable/administration_tab"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@+id/pedagogy"
+                    android:layout_alignLeft="@+id/pedagogy"
+                    android:layout_marginTop="20dp" />
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/background_two"
+                       android:minHeight="165dp"
+                       android:background="#E9E9E9"
+                       android:layout_alignStart="@+id/background_one"
+                       android:layout_marginTop="25dp"
+                       android:layout_below="@+id/background_one"
+                       android:layout_alignRight="@+id/background_one"
+                       android:layout_alignParentEnd="false"
+                       android:layout_alignParentStart="false" />
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/divers"
+                      android:id="@+id/divers"
+                      android:layout_alignTop="@+id/background_two"
+                      android:layout_alignLeft="@+id/pedagogy"
+                      android:layout_alignStart="@+id/pedagogy"
+                      android:layout_marginTop="5dp" />
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/image_planning"
+                       android:background="@drawable/administration_tab"
+                       android:layout_below="@+id/divers"
+                       android:layout_alignLeft="@+id/imageView"
+                       android:layout_marginTop="20dp" />
+
+            <epiandroid.app.adapters.TextViewCustom
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/planning"
+                    android:id="@+id/planning"
+                    android:layout_alignStart="@+id/marks"
+                    android:layout_marginTop="-5dp"
+                    android:layout_alignTop="@+id/image_planning"
+                    android:clickable="true"
+                    ref="https://intra.epitech.eu/annuel/instance/" />
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/image_documents"
+                       android:background="@drawable/administration_tab"
+                       android:layout_centerVertical="true"
+                       android:layout_marginTop="18dp"
+                       android:layout_below="@+id/image_planning"
+                       android:layout_alignLeft="@+id/imageView" />
+
+            <epiandroid.app.adapters.TextViewCustom
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/documents"
+                    android:id="@+id/documents"
+                    android:layout_centerVertical="true"
+                    android:layout_alignStart="@+id/planning"
+                    android:layout_alignTop="@+id/image_documents"
+                    android:layout_marginTop="-5dp"
+                    android:clickable="true"
+                    ref="https://intra.epitech.eu/file/" />
+
+            <epiandroid.app.adapters.TextViewCustom
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/autolink"
+                    android:id="@+id/autoconnect_link"
+                    android:layout_alignTop="@+id/image_autoconnect"
+                    android:layout_alignStart="@+id/documents"
+                    android:layout_marginTop="-5dp"
+                    android:clickable="true"
+                    ref="https://intra.epitech.eu/admin/autolog" />
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/image_autoconnect"
+                       android:background="@drawable/administration_tab"
+                       android:layout_marginTop="18dp"
+                       android:layout_alignLeft="@+id/imageView"
+                       android:layout_below="@+id/image_documents"/>
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/image_user_params"
+                       android:background="@drawable/administration_tab"
+                       android:layout_marginTop="18dp"
+                       android:layout_alignStart="@+id/image_autoconnect"
+                       android:layout_below="@+id/image_autoconnect"
+                       android:layout_alignLeft="@+id/imageView" />
+
+            <epiandroid.app.adapters.TextViewCustom
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/users_params"
+                    android:id="@+id/user_parameters"
+                    android:layout_alignStart="@+id/autoconnect_link"
+                    android:layout_marginTop="-5dp"
+                    android:layout_alignTop="@+id/image_user_params"
+                    android:clickable="true"
+                    ref="https://intra.epitech.eu/admin/parameters/" />
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/image_professor_doc"
+                       android:background="@drawable/administration_tab"
+                       android:layout_alignStart="@+id/image_user_params"
+                       android:layout_marginTop="18dp"
+                       android:layout_below="@+id/image_user_params"
+                       android:layout_alignLeft="@+id/imageView" />
+
+            <epiandroid.app.adapters.TextViewCustom
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/professors_doc"
+                    android:id="@+id/professor_doc"
+                    android:clickable="true"
+                    android:layout_alignTop="@+id/image_professor_doc"
+                    android:layout_alignStart="@+id/user_parameters"
+                    android:layout_marginTop="-5dp"
+                    ref="https://intra.epitech.eu/documentation/" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

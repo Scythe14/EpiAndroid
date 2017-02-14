@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="epiandroid.app" >
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/epitech_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:theme="@style/AppThemeLogin"
+            android:name=".activities.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:theme="@style/AppTheme"
+                android:name=".activities.HomeActivity"
+                android:label="@string/home_activity" >
+        </activity>
+        <activity
+                android:theme="@style/AppTheme"
+                android:name=".activities.MessageActivity"
+                android:label="@string/message_activity" >
+        </activity>
+        <activity
+                android:theme="@style/AppTheme"
+                android:name=".activities.TrombiActivity"
+                android:label="@string/trombi_activity" >
+        </activity>
+        <service android:enabled="true" android:name=".services.NotificationService" />
+    </application>
+</manifest>

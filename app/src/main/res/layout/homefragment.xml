@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:id="@+id/home_scroll_id"
+                android:fillViewport="true"
+                android:layout_height="match_parent">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:id="@+id/home_id"
+                        android:layout_height="match_parent">
+
+            <ListView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:clickable="true"
+                      android:id="@+id/module_list_id"/>
+
+            <ListView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:clickable="true"
+                      android:layout_below="@+id/module_list_id"
+                      android:id="@+id/intership_list_id"/>
+
+            <ListView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:clickable="true"
+                      android:layout_below="@+id/intership_list_id"
+                      android:id="@+id/activities_list_id"/>
+
+            <ListView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:clickable="true"
+                      android:layout_below="@+id/activities_list_id"
+                      android:id="@+id/marks_list_id"/>
+
+            <ListView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:clickable="true"
+                      android:layout_below="@+id/marks_list_id"
+                      android:id="@+id/projects_list_id"/>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

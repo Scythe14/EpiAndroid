@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:background="#303030"
+                  android:layout_height="wrap_content">
+        <Spinner android:layout_width="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:id="@+id/promo"
+                 android:prompt="@string/promo_spinner"
+                 android:entries="@array/promo"
+                 android:layout_height="wrap_content"/>
+        <Spinner android:layout_width="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:prompt="@string/course_spinner"
+                 android:entries="@array/course"
+                 android:id="@+id/course"
+                 android:layout_marginTop="10dp"
+                 android:layout_height="wrap_content"/>
+        <Spinner android:layout_width="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:prompt="@string/location_spinner"
+                 android:id="@+id/location"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginBottom="5dp"
+                 android:entries="@array/location"
+                 android:layout_height="wrap_content"/>
+        <EditText android:layout_width="wrap_content"
+                  android:id="@+id/trombi_login"
+                  android:hint="login_x"
+                  android:layout_marginLeft="10dp"
+                  android:layout_height="wrap_content"/>
+        <Button android:layout_width="wrap_content"
+                  android:id="@+id/trombi_ok"
+                  android:text="Ok"
+                  android:layout_marginLeft="10dp"
+                  android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <GridView   android:layout_width="match_parent"
+                android:id="@+id/user_grid"
+                android:numColumns="5"
+                android:layout_height="wrap_content"/>
+</LinearLayout>
